@@ -1,8 +1,6 @@
-*,
-*:after,
-*::before {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
+*{
+	padding: 0;
+	margin: 0;
 		box-sizing: border-box;
 }
 
@@ -327,7 +325,4 @@ input.gn-search:focus {
 			width: 100%;
 	}
 
-	.gn-menu-wrapper.gn-open-all .gn-scroller {
-			width: 130%
-	}
 }

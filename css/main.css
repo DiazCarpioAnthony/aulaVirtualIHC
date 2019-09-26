@@ -13,6 +13,7 @@
 
 body {
 	background: rgba(230, 230, 230, .15);
+	box-sizing: border-box;
 }
 .container > header,
 .codrops-top {
@@ -147,5 +148,46 @@ body {
 	.codrops-icon span {
 		display: none;
 	}
+
+}
+
+/* -------------------------- MAIN ---------------------------------*/
+.main{
+	width: 90%;
+	margin: auto;
+}
+.main h2 {
+	display: block;
+	margin-top: 80px;
+	font-family: 'Lato', Arial, sans-serif;
+	margin-bottom: 20px;
+}
+.main hr{
+	
+	margin-bottom: 20px;
+}
+.main .cursos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.main .curso{
+	margin: 10px;
+	background: #333;
+	color: #fff;
+	border-radius: 15px;
+	width: 40%;
+}
+
+.main .curso img{
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
+.main .curso p{
+	padding: 15px;
+	font-family: 'Lato', Arial, sans-serif;
+	line-height: 18px;
 
 }
