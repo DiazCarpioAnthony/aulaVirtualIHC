@@ -1,3 +1,4 @@
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
 	font-family: 'codropsicons';
@@ -11,13 +12,18 @@
 }
 
 body {
-	background: #34495e;
+	background: rgba(230, 230, 230, .15);
 }
-
 .container > header,
 .codrops-top {
 	color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
+}
+.container .title{
+	margin-left: 60px;
+}
+.container .main{
+	margin-top: 60px;
 }
 
 .container > header {
@@ -49,9 +55,6 @@ body {
 	font-size: 55%;
 	color: #74818e;
 	padding: 0 0 0.6em 0.1em;
-}
-.container .title{
-	margin-left: 60px;
 }
 
 /* To Navigation Style */

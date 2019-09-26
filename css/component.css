@@ -138,7 +138,9 @@
 }
 
 .gn-submenu li a {
-		color: #c1c9d1
+		color: #c1c9d1;
+		font-size: 13px;
+		font-weight: bold;
 }
 
 input.gn-search {
