@@ -1,0 +1,47 @@
+.recursos{
+    background: #fff;
+    padding:15px;
+    border: 1px solid #000;
+}
+
+.recursos .semana h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin: 0px;
+}
+
+.recursos .semana .recurso{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: #ccc;
+    padding: 10px;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.recursos .semana .recurso h3{
+    font-size: 1.25em;
+}
+
+.recursos .semana .sub-menu-recursos{
+    display: flex;
+    justify-content: space-between;
+}
+.recursos .semana .sub-menu-recursos .agregar-recurso{
+    border-left: 1px solid #000;
+}
+.recursos .semana .sub-menu-recursos .agregar-recurso a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    background: rgb(116, 131, 179);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
