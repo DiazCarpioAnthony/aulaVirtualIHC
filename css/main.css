@@ -12,7 +12,7 @@
 }
 
 body {
-	background: rgba(230, 230, 230, .15);
+	background: #EEEEEE;
 	box-sizing: border-box;
 }
 .container > header,
