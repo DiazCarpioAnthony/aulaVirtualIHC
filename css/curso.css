@@ -2,6 +2,7 @@
     background: #fff;
     padding:15px;
     border: 1px solid #000;
+    margin-bottom: 25px;
 }
 
 .recursos .semana h3{
@@ -45,3 +46,13 @@
     text-align: center;
     font-weight: bold;
 }
+/*
+.recursos .semana .sub-menu-recursos .agregar-recurso input[type=file]{
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}*/
