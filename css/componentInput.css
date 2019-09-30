@@ -169,7 +169,7 @@
 
 .inputfile-5 + label figure::after {
     border-bottom: 20px solid #722040;
-    border-right: 20px solid transparent;
+    border-right: 20px solid #fff;
 }
 
 .inputfile-5:focus + label figure::after,
@@ -236,4 +236,9 @@
 	.inputfile-6 + label strong {
 		display: block;
 	}
+}
+
+.box{
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
