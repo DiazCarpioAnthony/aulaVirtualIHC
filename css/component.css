@@ -206,6 +206,7 @@ input.gn-search:focus {
 	color: white
 }
 
+
 .gn-menu-main a.gn-icon-search {
 	position: absolute;
 	top: 0;
@@ -229,6 +230,16 @@ input.gn-search:focus {
 
 .gn-icon-help::before {
 	content: "\e000"
+}
+
+.gn-icon-any::before {
+	content: ""
+}
+
+.gn-icon-close::before {
+	content: "×";
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .gn-icon-earth::before {
@@ -269,6 +280,16 @@ input.gn-search:focus {
 
 .gn-icon-videos::before {
 	content: "\e009"
+}
+
+/* ------------PARA CUALQUIER ICONO----------------*/
+.gn-icon-any{
+	position: relative;
+}
+.gn-icon-any i{
+	position: absolute;
+	left: 20px;
+	top: 35%;
 }
 
 /* if an icon anchor has a span, hide the span */
