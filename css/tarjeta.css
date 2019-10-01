@@ -86,6 +86,7 @@
   margin-right: 10px;
   margin-top: 5px;
   margin-left: 5px;
+  font-size: 15px;
 }
 
 .blog-card .details .author i {
@@ -95,6 +96,7 @@
 .blog-card .details .date {
   margin-right: 10px;
   margin-left: 5px;
+  font-size: 15px;
 }
 
 .blog-card .details .date i {

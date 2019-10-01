@@ -236,16 +236,16 @@
                 </div>
             </section>
         </div>
-        <div class="detailBox">
-            <div class="titleBox">
+        <div id="detailBox" class="detailBox">
+            <div id="titleBox" class="titleBox">
                 <label>Learning to Code</label>
-                <button type="button" class="close" aria-hidden="true">&times;</button>
+                <button type="button" id="closeBox" class="close" aria-hidden="true">&times;</button>
             </div>
-            <div class="commentBox">
+            <div id="commentBox" class="commentBox box-hidden">
 
                 <p class="taskDescription">Yañez Durán</p>
             </div>
-            <div class="actionBox">
+            <div id="actionBox" class="actionBox box-hidden">
                 <ul class="commentList">
                     <li>
                         <div class="commenterImage">
@@ -293,6 +293,7 @@
     <script src="js/gnmenu.js"></script>
 
     <script src="js/curso.js"></script>
+    <script src="js/chat.js"></script>
     <script src="js/custom-file-input.js"></script>
     <script>
         new gnMenu(document.getElementById('gn-menu'));

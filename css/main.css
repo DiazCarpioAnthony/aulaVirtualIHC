@@ -232,6 +232,7 @@ body{
   color:#444;
   margin-top: 8px;
   display:inline-block;
+  cursor: pointer;
 }
 .titleBox {
     background-color:#fdfdfd;
@@ -249,9 +250,15 @@ body{
 	border: transparent;
 }
 
+.box-hidden{
+	display: none;
+}
+.box-visibilty{
+	display: block;
+}
 .commentBox {
     padding:10px;
-    border-top:1px dotted #bbb;
+	border-top:1px dotted #bbb;
 }
 .commentBox .form-group:first-child, .actionBox .form-group:first-child {
     width:80%;
@@ -298,7 +305,7 @@ body{
 }
 .actionBox {
     border-top:1px dotted #bbb;
-    padding:10px;
+	padding:10px;
 }
 .form-inline{
 	display: flex;
