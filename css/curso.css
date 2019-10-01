@@ -16,15 +16,17 @@
 .recursos .semana .recurso .titulo-recurso {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #000;
     border-radius: 8px;
-    background: #ccc;
     padding: 10px;
     align-items: center;
     margin-left: 15px;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 15px;    
+    background-color: #f4f4f5;
+    border-bottom: 3px solid #d9dce7;
+    border-right: 3px solid #d9dce7;
 }
+
 
 .recursos .semana .recurso .descripcion-recurso {
     border-radius: 8px;
@@ -55,6 +57,9 @@
 
 .recursos .semana .sub-menu-recursos .agregar-recurso {
     border-left: 1px solid #000;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .recursos .semana .sub-menu-recursos .agregar-recurso a {
@@ -85,6 +90,18 @@
     width: 100%;
 }
 
+.recursos .semana .sub-menu-recursos .agregar-recurso input[type=text] {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.recursos .semana .sub-menu-recursos .agregar-recurso textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 10px 0px;
+}
+
 @media screen and (max-width:890px) {
     .recursos .semana .sub-menu-recursos {
         flex-direction: column;
@@ -92,5 +109,6 @@
     .recursos .semana .sub-menu-recursos .agregar-recurso {
         border-left: 0px solid #000;
         border-top: 2px dotted #000;
+        text-align: center;
     }
 }

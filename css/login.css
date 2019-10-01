@@ -215,7 +215,7 @@
   
   @media screen and (max-width: 768px) {
     .txt1, .txt2 {
-      color: #fff;
+      color: #555555;
     }
   }
   
@@ -333,7 +333,7 @@
       background-position-x: 50%;
     }
     .login100-form-title {
-      color: #fff;
+      color: #555555;
     }
   }
   
@@ -394,7 +394,7 @@
   }
   @media screen and (max-width: 768px) {
     .label-input100 {
-      color: #fff;
+      color: #ccc;
     }
   }
   /*---------------------------------------------*/
@@ -462,10 +462,10 @@
   
   @media screen and (max-width: 768px) {
     .input100:focus {
-      color: #fff;
+      color: #555555;
     }
     .has-val {
-      color: #fff;
+      color: #555555;
     }
   }
   
@@ -489,7 +489,7 @@
   
   @media screen and (max-width: 768px) {
     .label-checkbox100 {
-      color: #fff;
+      color: #555555;
     }
   }
   
