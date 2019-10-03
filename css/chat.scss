@@ -1,138 +1,159 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
-$green: #86BB71;
-$blue: #94C2ED;
-$orange: #E38968;
-$gray: #92959E;
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+$green: #86bb71;
+$blue: #94c2ed;
+$orange: #e38968;
+$gray: #92959e;
 
 body {
-  background: #C5DDEB;
-  font: 14px/20px "Lato", Arial, sans-serif;
-  padding: 40px 0;
+  background: #fff;
   color: white;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 750px;
   background: #444753;
   border-radius: 5px;
+  @media screen and (max-width: 890px) {
+    width: 100%;
+    margin: 100px auto;
+  }
 }
 
 .people-list {
-  width:260px;
+  width: 260px;
   float: left;
-  
+  padding-bottom: 20px;
+  @media screen and (max-width: 890px) {
+    width: 20%;
+    margin: auto;
+    height: 100vh;
+    overflow-y: auto;
+  }
   .search {
     padding: 20px;
+    i {
+      @media screen and (max-width: 890px) {
+        display: none;
+      }
+    }
   }
-  
+
   input {
     border-radius: 3px;
     border: none;
     padding: 14px;
     color: white;
-    background: #6A6C75;
+    background: #6a6c75;
     width: 90%;
     font-size: 14px;
   }
-  
+
   .fa-search {
     position: relative;
     left: -25px;
   }
-  
+
   ul {
     padding: 20px;
     height: 770px;
- 
-    
-    
-    
+    list-style: none;
     li {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      padding: 5px 0;
+      padding-left: 5px;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid #65676e;
+      }
+      &:hover {
+        background: rgba(49, 172, 172, 0.85);
+      }
     }
   }
-  
+
   img {
     float: left;
   }
-  
+
   .about {
     float: left;
     margin-top: 8px;
   }
-  
+
   .about {
     padding-left: 8px;
   }
-  
+
   .status {
     color: $gray;
   }
-  
 }
 
 .chat {
   width: 490px;
-  float:left;
-  background: #F2F5F8;
+  float: left;
+  background: #f2f5f8;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  
+
   color: #434651;
-  
+
+  @media screen and (max-width: 890px) {
+    width: 80%;
+    margin: auto;
+  }
   .chat-header {
     padding: 20px;
     border-bottom: 2px solid white;
-    
+
     img {
       float: left;
     }
-    
+
     .chat-about {
       float: left;
       padding-left: 10px;
       margin-top: 6px;
     }
-    
+
     .chat-with {
       font-weight: bold;
       font-size: 16px;
     }
-    
+
     .chat-num-messages {
       color: $gray;
     }
-    
+
     .fa-star {
       float: right;
-      color: #D8DADF;
+      color: #d8dadf;
       font-size: 20px;
       margin-top: 12px;
     }
   }
-  
+
   .chat-history {
     padding: 30px 30px 20px;
     border-bottom: 2px solid white;
     overflow-y: scroll;
     height: 575px;
-    
+    ul{
+      list-style: none;    
+    }
     .message-data {
       margin-bottom: 15px;
     }
-    
+
     .message-data-time {
       color: lighten($gray, 8%);
       padding-left: 6px;
     }
-    
-    .message {      
+
+    .message {
       color: white;
       padding: 18px 20px;
       line-height: 26px;
@@ -141,7 +162,7 @@ body {
       margin-bottom: 30px;
       width: 90%;
       position: relative;
-      
+
       &:after {
         bottom: 100%;
         left: 7%;
@@ -156,25 +177,24 @@ body {
         margin-left: -10px;
       }
     }
-    
+
     .my-message {
       background: $green;
     }
-    
+
     .other-message {
       background: $blue;
-      
+
       &:after {
         border-bottom-color: $blue;
         left: 93%;
       }
     }
-    
   }
-  
+
   .chat-message {
     padding: 30px;
-    
+
     textarea {
       width: 100%;
       border: none;
@@ -183,16 +203,15 @@ body {
       margin-bottom: 10px;
       border-radius: 5px;
       resize: none;
-      
     }
-    
-    .fa-file-o, .fa-file-image-o {
+
+    .fa-file-o,
+    .fa-file-image-o {
       font-size: 16px;
       color: gray;
       cursor: pointer;
-      
     }
-    
+
     button {
       float: right;
       color: $blue;
@@ -201,8 +220,8 @@ body {
       border: none;
       cursor: pointer;
       font-weight: bold;
-      background: #F2F5F8;
-      
+      background: #f2f5f8;
+
       &:hover {
         color: darken($blue, 7%);
       }
@@ -210,15 +229,17 @@ body {
   }
 }
 
-.online, .offline, .me {
-    margin-right: 3px;
-    font-size: 10px;
-  }
-  
+.online,
+.offline,
+.me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
 .online {
   color: $green;
 }
-  
+
 .offline {
   color: $orange;
 }
@@ -237,14 +258,13 @@ body {
 
 .float-right {
   float: right;
-}
+  }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
-
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }

@@ -17,21 +17,40 @@
 .gn-menu-main, .gn-menu-main ul {
 	margin: 0;
 	padding: 0;
-	background: white;
-	color: #5f6f81;
+	background: rgba(0, 102, 178, 1);
+	color: #fff;
 	list-style: none;
 	text-transform: none;
 	font-weight: 300;
+	font-size: 20px;
 	font-family: 'Lato', Arial, sans-serif;
 	line-height: 60px;
 	z-index: 5;
 }
 
-.gn-menu-main {-webkit-box-shadow: 3px -15px 25px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px -15px 25px 0px rgba(0,0,0,0.75);
-	box-shadow: 3px -15px 25px 0px rgba(0,0,0,0.75);
+.gn-menu-main {
+	-webkit-box-shadow: 1px -4px 16px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px -4px 16px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 1px -4px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
+.gn-menu-main ul li,
+.gn-menu-main ul li a:first-child{
+	border-bottom: 1px solid #fff;
+
+}
+.gn-menu-main ul li li{
+	border-bottom: 0px solid #fff;
+}
+
+.gn-menu-main ul li ul li a{
+	background:	rgb(131, 156, 160);
+	color: #fff;
+}
+.gn-menu{
+	background:	rgb(131, 156, 160);
+
+}
 .gn-menu-main {
 	position: fixed;
 	top: 0;
@@ -44,13 +63,13 @@
 .gn-menu-main a {
 	display: block;
 	height: 100%;
-	color: #5f6f81;
+	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .no-touch .gn-menu-main a:hover, .no-touch .gn-menu li.gn-search-item:hover, .no-touch .gn-menu li.gn-search-item:hover a {
-	background: #5f6f81;
+	background: rgba(0, 0, 0, .7);
 	color: white;
 }
 
@@ -150,7 +169,7 @@ input.gn-search {
 	outline: none;
 	border: none;
 	background: transparent;
-	color: #5f6f81;
+	color: #fff;
 	font-weight: 300;
 	font-family: 'Lato', Arial, sans-serif;
 	cursor: pointer;
@@ -159,19 +178,19 @@ input.gn-search {
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
-	color: #5f6f81
+	color: #fff
 }
 
 .gn-search:-moz-placeholder {
-	color: #5f6f81
+	color: #fff
 }
 
 .gn-search::-moz-placeholder {
-	color: #5f6f81
+	color: #fff
 }
 
 .gn-search:-ms-input-placeholder {
-	color: #5f6f81
+	color: #fff
 }
 
 /* hide placeholder when active in Chrome */
@@ -205,7 +224,6 @@ input.gn-search:focus {
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:-ms-input-placeholder {
 	color: white
 }
-
 
 .gn-menu-main a.gn-icon-search {
 	position: absolute;
@@ -283,10 +301,12 @@ input.gn-search:focus {
 }
 
 /* ------------PARA CUALQUIER ICONO----------------*/
-.gn-icon-any{
+
+.gn-icon-any {
 	position: relative;
 }
-.gn-icon-any i{
+
+.gn-icon-any i {
 	position: absolute;
 	left: 20px;
 	top: 35%;
@@ -306,19 +326,19 @@ input.gn-search:focus {
 	vertical-align: -2px;
 	width: 30px;
 	height: 3px;
-	background: #5f6f81;
-	box-shadow: 0 3px white, 0 -6px #5f6f81, 0 -9px white, 0 -12px #5f6f81;
+	background: #fff;
+	box-shadow: 0 3px transparent, 0 -6px #fff, 0 -9px transparent, 0 -12px #fff;
 	content: '';
 }
 
 .no-touch .gn-icon-menu:hover::before, .no-touch .gn-icon-menu.gn-selected:hover::before {
-	background: white;
-	box-shadow: 0 3px #5f6f81, 0 -6px white, 0 -9px #5f6f81, 0 -12px white;
+	background: #fff;
+	box-shadow: 0 3px transparent, 0 -6px #fff, 0 -9px transparent, 0 -12px #fff;
 }
 
 .gn-icon-menu.gn-selected::before {
-	background: #5993cd;
-	box-shadow: 0 3px white, 0 -6px #5993cd, 0 -9px white, 0 -12px #5993cd;
+	background: #fff;
+	box-shadow: 0 3px transparent, 0 -6px #fff, 0 -9px transparent, 0 -12px #fff;
 }
 
 /* styles for opening menu */
