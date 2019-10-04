@@ -26,6 +26,11 @@
 	font-family: 'Lato', Arial, sans-serif;
 	line-height: 60px;
 	z-index: 5;
+	overflow: hidden;
+}
+
+.gn-menu-main ul {
+	background: #fff;
 }
 
 .gn-menu-main {
@@ -34,23 +39,27 @@
 	box-shadow: 1px -4px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
-.gn-menu-main ul li,
-.gn-menu-main ul li a:first-child{
-	border-bottom: 1px solid #fff;
-
-}
-.gn-menu-main ul li li{
-	border-bottom: 0px solid #fff;
+.gn-menu-main ul li, .gn-menu-main ul li a {
+	border-bottom: 0.5px solid #cccc;
 }
 
-.gn-menu-main ul li ul li a{
-	background:	rgb(131, 156, 160);
-	color: #fff;
+.gn-menu-main ul li .cursos, .gn-menu-main ul li .tareas-pendientes {
+	border-bottom: 2px solid #cccc;
 }
-.gn-menu{
-	background:	rgb(131, 156, 160);
 
+.gn-menu-main ul li li {
+	border-bottom: 0px solid #cccc;
 }
+
+.gn-menu-main ul li ul li a {
+	background: #fff;
+	color: rgba(0, 102, 178, 1);
+}
+
+.gn-menu {
+	background: #fff;
+}
+
 .gn-menu-main {
 	position: fixed;
 	top: 0;
@@ -63,13 +72,17 @@
 .gn-menu-main a {
 	display: block;
 	height: 100%;
-	color: #fff;
+	color: rgba(0, 102, 178, 1);
 	text-decoration: none;
 	cursor: pointer;
 }
 
+.gn-menu-main .white {
+	color: #fff;
+}
+
 .no-touch .gn-menu-main a:hover, .no-touch .gn-menu li.gn-search-item:hover, .no-touch .gn-menu li.gn-search-item:hover a {
-	background: rgba(0, 0, 0, .7);
+	background: #5f6f81;
 	color: white;
 }
 
@@ -131,6 +144,18 @@
 	transition: transform 0.3s, width 0.3s;
 }
 
+@media screen and (min-width:980px) {
+	.gn-menu-wrapper {
+		-webkit-box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
+box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
+		height: calc(61*7px);
+	}
+	.gn-menu-wrapper.gn-open-all {
+		height: 90%;
+	}
+}
+
 .gn-scroller {
 	position: absolute;
 	overflow-y: scroll;
@@ -169,7 +194,7 @@ input.gn-search {
 	outline: none;
 	border: none;
 	background: transparent;
-	color: #fff;
+	color: #5f6f81;
 	font-weight: 300;
 	font-family: 'Lato', Arial, sans-serif;
 	cursor: pointer;
@@ -178,19 +203,19 @@ input.gn-search {
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
-	color: #fff
+	color: #5f6f81;
 }
 
 .gn-search:-moz-placeholder {
-	color: #fff
+	color: #5f6f81;
 }
 
 .gn-search::-moz-placeholder {
-	color: #fff
+	color: #5f6f81;
 }
 
 .gn-search:-ms-input-placeholder {
-	color: #fff
+	color: #5f6f81;
 }
 
 /* hide placeholder when active in Chrome */
@@ -350,7 +375,7 @@ input.gn-search:focus {
 }
 
 .gn-menu-wrapper.gn-open-all {
-	width: 340px
+	width: 360px
 }
 
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
