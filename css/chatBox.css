@@ -17,6 +17,12 @@
   display:inline-block;
   cursor: pointer;
 }
+.titleBox label i{
+	margin-right: 10px;
+	margin-left: 5px;
+	font-size: 16px;
+	color: rgba(0, 102, 178, .86)
+}
 .titleBox {
     background-color:#fdfdfd;
 	padding:10px;
