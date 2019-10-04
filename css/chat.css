@@ -36,6 +36,26 @@ body {
   padding: 20px;
 }
 
+.people-list .search input,
+.people-list .search input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.people-list .search input,
+.people-list .search input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.people-list .search input,
+.people-list .search input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.people-list .search input,
+.people-list .search input::placeholder {
+  color: #fff;
+}
+
 @media screen and (max-width: 890px) {
   .people-list .search i {
     display: none;
@@ -95,7 +115,7 @@ body {
 }
 
 .people-list .status {
-  color: #92959e;
+  color: #cfcfce;
 }
 
 .chat {
@@ -121,6 +141,10 @@ body {
 
 .chat .chat-header img {
   float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #65676e;
 }
 
 .chat .chat-header .chat-about {
@@ -143,6 +167,11 @@ body {
   color: #d8dadf;
   font-size: 20px;
   margin-top: 12px;
+}
+
+.chat .chat-header .fa-star:hover {
+  color: #dbdb0b;
+  cursor: pointer;
 }
 
 .chat .chat-history {
