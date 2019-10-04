@@ -146,9 +146,9 @@
 
 @media screen and (min-width:980px) {
 	.gn-menu-wrapper {
-		-webkit-box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
-box-shadow: 1px 7px 11px 3px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 1px 7px 11px 3px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 1px 7px 11px 3px rgba(0, 0, 0, 0.75);
+		box-shadow: 1px 7px 11px 3px rgba(0, 0, 0, 0.75);
 		height: calc(61*7px);
 	}
 	.gn-menu-wrapper.gn-open-all {
